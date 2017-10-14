@@ -1,0 +1,96 @@
+.nav {
+    display: flex;
+    width: 100%;
+
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    z-index: 10000;
+
+    margin: 0px;
+    padding: 15px 5% 15px 5%;
+
+    background: #601830;
+    color: white;
+}
+
+.nav-logo-container {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.nav-logo {
+    margin: 0px;
+    padding: 0px 2% 0px 2%;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav-link-container {
+    margin: 0px 25px;
+    padding: 0px;
+}
+
+.nav-link-separator {
+    width: 1px;
+    height: 65%;
+    margin: 0px 0px 1px 0px;
+    padding: 0px;
+    background: white;
+}
+
+.nav-link {
+    color: white;
+    padding: 9px;
+    font-size: 26px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.nav-link:hover {
+    text-decoration: none;
+    opacity: 0.9;
+    background: cornflowerblue;
+    color: white;
+}
+.nav-link:visited, .nav-link:focus, .nav-link:active {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link-active {
+    background: black;
+}
+
+
+.nav-link-hightext {
+    font-size: 50%;
+}
+
+
+.nav-link-asatruth-separator {
+    width: 1px;
+    height: 65%;
+    margin: 0px 0px 1px 5px;
+    padding: 0px;
+    background: white;
+}
+
+.nav-link-asatruth {
+    color: cornflowerblue;
+    position: relative;
+    top: 7px;
+}

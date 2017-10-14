@@ -1,0 +1,33 @@
+.musicianpage-enter {
+    position: absolute;
+    left: -100vw;
+    right: 100vw;
+    opacity: 0.01;
+
+    z-index: 100;
+}
+
+.musicianpage-enter.musicianpage-enter-active {
+    left: 0;
+    right: 0;
+    opacity: 1;
+
+    transition: opacity 700ms ease-in, left 700ms ease-in, right 700ms ease-in;
+}
+
+.musicianpage-exit {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 1;
+
+    z-index: 0;
+}
+
+.musicianpage-exit.musicianpage-exit-active {
+    left: -100vw;
+    right: 100vw;
+    opacity: 0.01;
+
+    transition: opacity 700ms ease-in, left 700ms ease-in, right 700ms ease-in;
+}

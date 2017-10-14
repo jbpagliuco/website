@@ -1,0 +1,48 @@
+.dev-pf-item {
+    width: 100%;
+    margin: 60px 0px;
+    padding: 50px 0px;
+
+    text-align: center;
+}
+
+.developerpage-item-cover {
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 105px;
+    left: 0px;
+}
+
+.developerpage-enter {
+    position: absolute;
+    left: 100vw;
+    right: -100vw;
+    opacity: 0.01;
+
+    z-index: 100;
+}
+
+.developerpage-enter.developerpage-enter-active {
+    left: 0;
+    right: 0;
+    opacity: 1;
+
+    transition: opacity 700ms ease-in, left 700ms ease-in, right 700ms ease-in;
+}
+
+.developerpage-exit {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 1;
+
+    z-index: 0;
+}
+
+.developerpage-exit.developerpage-exit-active {
+    left: 100vw;
+    right: -100vw;
+    opacity: 0.01;
+
+    transition: opacity 700ms ease-in, left 700ms ease-in, right 700ms ease-in;
+}

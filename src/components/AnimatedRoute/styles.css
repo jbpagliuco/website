@@ -1,0 +1,50 @@
+.fade-enter {
+    opacity: 0.01;
+    z-index: 0;
+}
+  
+.fade-enter.fade-enter-active {
+    opacity: 1;
+    transition: opacity 700ms ease-in;
+}
+
+.fade-exit {
+    opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+    opacity: 0.01;
+    transition: opacity 700ms ease-in;
+}
+
+
+
+.stretch-enter {
+    opacity: 0.01;
+    
+    left: -100vw;
+    right: -100vw;
+}
+  
+.stretch-enter.stretch-enter-active {
+    opacity: 1;
+    left: 0;
+    right: 0;
+    transition: opacity 700ms ease-in, left 700ms ease-in, right 700ms ease-in;
+}
+
+.stretch-exit {
+    opacity: 1;
+    
+    left: 0;
+    right: 0;
+}
+
+.stretch-exit.stretch-exit-active {
+    opacity: 0.01;
+    
+    left: -100vw;
+    right: -100vw;
+
+    transition: opacity 700ms ease-in, left 700ms ease-in, right 700ms ease-in;
+}

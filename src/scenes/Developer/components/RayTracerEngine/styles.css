@@ -1,0 +1,36 @@
+.rte-container {
+    width: 100%;
+    min-height: 100%;
+    overflow-y: auto;
+
+    background: #333;
+}
+
+.rte-container.transition-appear {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+}
+
+.rte-container.transition-appear.transition-appear-active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.rte-container.transition-leave {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.rte-container.transition-leave.transition-leave-active {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+}
+
+.rte-imagecarousel {
+    box-shadow: 10px 10px 5px black, -10px 10px 5px black;
+}
+
+.rte-imagedesc {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+}

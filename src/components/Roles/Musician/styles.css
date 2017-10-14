@@ -1,0 +1,33 @@
+.role-mus-text {
+    background: #333554;
+    color: white;
+}
+
+.role-mus-viewportfolio {
+    border: 2px solid black;
+    background: silver;
+    color: #333554;
+}
+
+.role-mus-viewportfolio:hover {
+    background: #333554;
+    color: silver;
+}
+
+.role-mus-iclink {
+    color: orange;
+    text-decoration: none;
+}
+.role-mus-iclink:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+.role-mus-aslink {
+    color: yellow;
+    text-decoration: none;
+}
+.role-mus-aslink:hover {
+    color: yellow;
+    text-decoration: underline;
+}

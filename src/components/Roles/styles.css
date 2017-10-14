@@ -1,0 +1,45 @@
+.role-container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.role-image {
+    flex: 0;
+    max-width: 50%;
+    object-fit: cover;
+}
+
+.role-text {
+    flex: 1;
+    
+    margin: 0px;
+    padding: 30px;
+}
+
+.role-text-title {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.role-text-main {
+    text-align: left;
+    width: 75%;
+    margin: 0px 0px 30px 20px;
+    font-size: 17px;
+}
+.role-text-main p {
+    margin: 10px 0px 20px 0px;
+}
+
+.role-viewportfolio {
+    padding: 10px;
+    
+    font-weight: bold;
+    font-size: 20px;
+
+    transition: background 300ms ease, color 300ms ease;
+}

@@ -1,0 +1,15 @@
+.role-dev-text {
+    background: #c0a878;
+    color: black;
+}
+
+.role-dev-viewportfolio {
+    border: 2px solid white;
+    background: black;
+    color: #c0a878;
+}
+
+.role-dev-viewportfolio:hover {
+    background: #c0a878;
+    color: black;
+}
