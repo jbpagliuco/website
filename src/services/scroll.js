@@ -5,8 +5,7 @@ const scroll = Scroll.animateScroll;
 export const scrollToTop = () => {
     scroll.scrollToTop({
         smooth: true,
-        duration: 700,
-        ignoreCancelEvents: true
+        duration: 700
     });
 }
 
@@ -26,8 +25,7 @@ export const scrollToElem = (e) => {
     const to = eTop - navSize + domTop;
 
     scroll.scrollTo(to, {
-        smooth: true,
-        ignoreCancelEvents: true
+        smooth: true
     });
 }
 

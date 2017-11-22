@@ -28,9 +28,40 @@
 
 .rte-imagecarousel {
     box-shadow: 10px 10px 5px black, -10px 10px 5px black;
+    width: 1000px;
+    height: 1000px;
+}
+
+.rte-image {
+    width: 1000px;
+    height: 1000px;
+}
+
+@media (max-height: 1100px) {
+    .rte-imagecarousel {
+        width: 750px;
+        height: 750px;
+    }
+    .rte-image {
+        width: 750px;
+        height: 750px;
+    }
+}
+
+@media (max-height: 900px) {
+    .rte-imagecarousel {
+        width: 500px;
+        height: 500px;
+    }
+    .rte-image {
+        width: 500px;
+        height: 500px;
+    }
 }
 
 .rte-imagedesc {
+    text-shadow: none;
+    padding: 5px;
     background: rgba(255, 255, 255, 0.8);
     color: black;
 }

@@ -95,3 +95,13 @@ a.anchor {
         font-size: 20px;
     }
 }
+
+@media (min-width: 1500px) {
+    h1 {
+        font-size: 58px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}

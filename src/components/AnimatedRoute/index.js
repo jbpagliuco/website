@@ -12,8 +12,6 @@ export default class AnimatedRoute extends React.Component {
     childrenRenderer = ( { match } ) => {
         const Component = this.props.component;
 
-        console.log(Component.name, match);
-
         return (
             <CSSTransition
                 in={!!match}

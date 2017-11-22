@@ -7,10 +7,12 @@
     padding: 0px;
 }
 
+
 .role-image {
-    flex: 0;
+    width: 1050px;
     max-width: 50%;
-    object-fit: cover;
+    background-size: cover;
+    background-position-y: bottom;
 }
 
 .role-text {
@@ -29,7 +31,6 @@
     text-align: left;
     width: 75%;
     margin: 0px 0px 30px 20px;
-    font-size: 17px;
 }
 .role-text-main p {
     margin: 10px 0px 20px 0px;
@@ -42,4 +43,30 @@
     font-size: 20px;
 
     transition: background 300ms ease, color 300ms ease;
+}
+
+
+
+
+
+
+
+@media (max-width: 1100px) {
+    .role-image {
+        display: none;
+    }
+
+    .role-text {
+        text-align: center;
+    }
+    
+    .role-text-title {
+        text-align: center;
+    }
+
+    .role-text-main {
+        width: 100%;
+        margin: 0px 0px 30px 0px;
+        text-align: center;
+    }
 }

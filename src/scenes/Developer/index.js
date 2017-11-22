@@ -12,22 +12,22 @@ require("./styles.css");
 export default class DeveloperPage extends React.Component {
     render() {
         return (
-            <div className="">
-                <DeveloperHome />
+            <div className="nospace">
+                <AnimatedRoute
+                    classNames="fade"
+                    exact={true}
+                    path="/developer"
+                    component={DeveloperHome} />
 
-                <div className="developerpage-item-cover">
-                    <AnimatedRoute
-                        classNames="fade"
-                        exact={true}
-                        path="/developer/raytracingengine"
-                        component={RayTracerEngine} />
-                        
-                    <AnimatedRoute
-                        classNames="fade"
-                        exact={true}
-                        path="/developer/gameengine"
-                        component={GraphicsEngine} />
-                </div>
+                <AnimatedRoute
+                    classNames="fade"
+                    path="/developer/raytracingengine"
+                    component={RayTracerEngine} />
+                    
+                <AnimatedRoute
+                    classNames="fade"
+                    path="/developer/graphicsengine"
+                    component={GraphicsEngine} />
             </div>
         );
     }

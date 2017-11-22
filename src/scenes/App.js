@@ -7,6 +7,7 @@ import Nav from "components/Nav";
 import Home from "scenes/Home";
 import Developer from "scenes/Developer";
 import Musician from "scenes/Musician";
+import Asatruth from "scenes/Asatruth";
 
 export default class App extends React.Component {
     render() {
@@ -22,23 +23,19 @@ export default class App extends React.Component {
 
                 <AnimatedRoute
                     path="/developer"
-                    classNames={{
-                        enter: "developerpage-enter",
-                        enterActive: "developerpage-enter-active",
-                        exit: "developerpage-exit",
-                        exitActive: "developerpage-exit-active",
-                    }}
+                    classNames="fade"
                     component={Developer} />
                     
                 <AnimatedRoute
                     path="/musician"
-                    classNames={{
-                        enter: "musicianpage-enter",
-                        enterActive: "musicianpage-enter-active",
-                        exit: "musicianpage-exit",
-                        exitActive: "musicianpage-exit-active",
-                    }}
+                    classNames="fade"
                     component={Musician} />
+
+                <AnimatedRoute
+                    classNames="fade"
+                    exact={true}
+                    path="/asatruth"
+                    component={Asatruth} />
             </div>
         );
     }

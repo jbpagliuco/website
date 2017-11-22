@@ -28,18 +28,19 @@ export default class RoleMusician extends React.Component {
                             I've been playing music for as long as I remember. I started with piano when I was around 5 years old. I played for several years, until I eventually tried out the cello. I ended up dropping it so I could join the school band on drums. I enjoyed that a lot, and a few years later my parents got me a drumset, and I've been banging on that thing ever since.
                         </p>
                         <p>
-                            A lot of my inspiration stems from Rush (Neil Peart is god) and Dream Theater (Mike Portnoy is also a god). I've been a huge fan of progressive metal ever since I discovered the genre in middle school. Once I joined my band,&nbsp;
+                            A lot of my inspiration stems from Neil Peart (Rush) and Mike Portnoy (Dream Theater). I've been a huge fan of progressive metal ever since I discovered the genre in middle school. However, since joining my band,&nbsp;
                             <a className="role-mus-iclink" href="https://www.facebook.com/illinicontraband/" target="_blank">Illini Contraband</a>
-                            ,&nbsp;my tastes in music have expanded 10 times over, and I find myself listening to just about anything.
+                            ,&nbsp;I find myself listening to just about anything.
                         </p>
                         <p>
-                            I never just stick to drumming though. I'm always learning something new, which at the moment happens to be singing (because using 4 body parts at once was too easy). This is also the first time I'm trying my hand at composing for my game Asatruth. You can check out&nbsp;
-                            <Link className="role-mus-aslink" to="/asatruth">that page</Link> and my porfolio to see what I'm up to!
+                            I never just stick to drumming though. I'm always learning something new, which at the moment happens to be singing (because using 4 body parts at once was too easy). This is also the first time I'm trying my hand at composing for my game&nbsp;
+                            <Link className="role-mus-aslink" to="/asatruth">Asatruth</Link>
+                            . Check out my portfolio to see what I've been working on!
                         </p>
                     </div>
                     {this.getPortfolioLink()}
                 </div>
-                <img className="role-image" src="public/images/bkg/BKG_Mus.jpg" />
+                <div className="role-image" style={{backgroundImage: "url(/public/images/bkg/BKG_Mus.jpg)"}}/>
             </div>
         );
     }

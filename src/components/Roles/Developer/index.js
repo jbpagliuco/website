@@ -12,10 +12,10 @@ export default class RoleDeveloper extends React.Component {
 
     getLastParagraph = () => {
         if (this.props.showPortfolioButton) {
-            return "Since then, I've been able to work on 2 large projects for classes here at UIUC. The first was a real time graphics engine, with lighting, reflections, skyboxes, shadows, object scripting, and more. The second was a production-level ray tracing engine, built to render high quality and realistic images from flexible user-defined scenes. Both of these can be seen in my developer portfolio, linked below.";
+            return "Since then, I've been able to work on 2 large projects for classes here at UIUC. The first was a real time graphics engine, with lighting, reflections, skyboxes, shadows, object scripting, and more. The second was a production-level ray tracing engine, built to render high quality and realistic images from flexible user-defined scenes. Both of these can be seen in my software engineer portfolio, linked below.";
         }
         else {
-            return "Since then, I've been able to work on 2 large projects for classes here at UIUC. The first was a real time graphics engine, with lighting, reflections, skyboxes, shadows, object scripting, and more. The second was a production-level ray tracing engine, built to render high quality and realistic images from flexible user-defined scenes. Both of these can be seen below.";
+            return "Since then, I've been able to work on 2 large projects for classes here at UIUC. The first was a real time graphics engine, with lighting, reflections, skyboxes, shadows, object scripting, and more. The second was a production-level ray tracing engine, built to render high quality and realistic images from flexible user-defined scenes. Both of these and more can be seen below.";
         }
     }
 
@@ -26,7 +26,7 @@ export default class RoleDeveloper extends React.Component {
         else {
             return (
                 <Link to="/developer" onClick={this.onPortfolioClick}>
-                    <button className="role-viewportfolio role-dev-viewportfolio">View my developer portfolio</button>
+                    <button className="role-viewportfolio role-dev-viewportfolio">View my software engineer portfolio</button>
                 </Link>
             );
         }
@@ -35,12 +35,12 @@ export default class RoleDeveloper extends React.Component {
     render() {
         return (
             <div id={this.props.id} className="role-container">
-                <img className="role-image" src="public/images/bkg/BKG_Dev.jpg" />
+                <div className="role-image role-dev-image" style={{backgroundImage: "url(/public/images/bkg/BKG_Dev.jpg)"}}/>
                 <div className="role-text role-dev-text">
-                    <h1 className="role-text-title">Software Developer</h1>
+                    <h1 className="role-text-title">Software Engineer</h1>
                     <div className="role-text-main">
                         <p>
-                            Believe it or not, after studying Computer Science for several years, I consider myself a software developer. My journey began in highschool with a calculator, trying to make my life easier by making programs for my math classes. Eventually, I got behind the keyboard and began learning Visual Basic and Java (those were dark times). All this was around the time Skyrim was out, and I spent countless hours playing it. I realized that I was utterly fascinated by what I was seeing... an entire world, within my PS3.
+                            Believe it or not, after studying Computer Science for several years, I consider myself a software engineer. My journey began in highschool with a calculator, trying to make my life easier by making programs for my math classes. Eventually, I got behind the keyboard and began learning Visual Basic and Java (those were dark times). All this was around the time Skyrim was out, and I spent countless hours playing it. I realized that I was utterly fascinated by what I was seeing... an entire world, within my PS3.
                         </p>
                         <p>
                             I quickly found myself buying books on computer graphics and trying to figure out how it all worked. I started by implementing a wireframe 3d graphics pipeline in Java for a highschool project. After that, I learned how to use XNA with C#, then DirectX and OpenGL with C++. I started making more complicated engines, playing around with lighting, terrain, and whatever else I could think of.

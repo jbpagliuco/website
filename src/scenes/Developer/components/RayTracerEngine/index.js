@@ -1,6 +1,8 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 
+import ProjectItem from "../ProjectItem";
+
 require("./styles.css");
 
 const images = [
@@ -40,9 +42,10 @@ const images = [
 
 export default class RayTracerEngine extends React.Component {
     getImage = (image, i) => {
+        const size = (window.innerWidth > 2000) ? 1000 : 500;
         return (
             <Carousel.Item key={i}>
-                <img width={1000} height={1000} src={"/public/images/rte/" + image.link}/>
+                <img className="rte-image" src={"/public/images/rte/" + image.link}/>
                 <Carousel.Caption>
                     <p className="rte-imagedesc">{image.description}</p>
                 </Carousel.Caption>
@@ -50,19 +53,54 @@ export default class RayTracerEngine extends React.Component {
         );
     }
 
+    getLongDescription = () => {
+        return (
+            <div className="nospace">
+                <p>
+                    This was a project for the course CS 419, called Production Computer Graphics. The result of about half a semester's work was a Monte Carlo rendering engine. From a scene description, the engine could produce high quality images, with features such as area lighting and soft shadows, perfect and glossy reflections, and transparency.
+                </p>
+
+                <p>
+                    Due to using Monte Carlo techniques, several samples were taken per pixel to result in a smooth image, and this meant long rendering times. To help alleviate this, I implemented several acceleration techniques. The first thing I did was to use geometric data structures for the world, namely regular grids and KD-trees. The second was parallelizing the rendering process over multiple CPU cores.
+                </p>
+            </div>
+        );
+    }
+
+    getInfo = () => {
+        return (
+            <div className="nospace">
+                <p><strong>Date</strong>: Spring 2017 semester</p>
+                <p><strong>Language used</strong>: C++</p>
+                <p>
+                    <strong>Code Repository</strong>:&nbsp;
+                    <a href="https://github.com/jbpagliuco/RayTracer-v2" target="_blank">https://github.com/jbpagliuco/RayTracer-v2</a>
+                </p>
+            </div>
+        );
+    }
+
+    getDisplay = () => {
+        return (
+            <div className="nospace">
+                <p>Images rendered by the engine</p>
+                <Carousel className="rte-imagecarousel">
+                    {images.map(this.getImage)}
+                </Carousel>
+            </div>
+        );
+    }
+
     render() {
         return (
             <div className="rte-container transition-item">
-                <div className="ge-desc-container">
-                    <h1 className="ge-desc-title">Ray Tracing Engine (2016)</h1>
-                    <p>
-                        This was a project for the course CS 419, called Production Computer Graphics. The result of about half a semester's work was a Monte Carlo rendering engine, implemented purely in C++. From a scene description, the engine could produce high quality images, with features such as area lighting and soft shadows, perfect and glossy reflections, and transparency. Because this used Monte Carlo techniques, several samples were taken per ray to result in a smooth image, and this meant long rendering times. To help alleviate this, I implemented several acceleration techniques. The first thing I did was to use geometric data structures for the world, namely regular grids and KD-trees. The second was parallelizing the rendering process over multiple CPU cores. Below are some of the pictures rendered by the engine.
-                    </p>
-                
-                    <Carousel className="rte-imagecarousel">
-                        {images.map(this.getImage)}
-                    </Carousel>
-                </div>
+                <ProjectItem
+                    title="Ray Tracing Engine"
+                    description="A rendering engine used to produce high quality images from a 3d scene"
+                    left={this.getLongDescription()}
+                    right={this.getInfo()}
+                    display={this.getDisplay()}
+                    />
             </div>
         );
     }

@@ -13,18 +13,20 @@
 
     background: #601830;
     color: white;
+
+    transition: background-color 500ms ease-in;
 }
 
 .nav-logo-container {
     position: relative;
     margin: 0px;
     padding: 0px;
-    cursor: pointer;
 }
 
 .nav-logo {
     margin: 0px;
     padding: 0px 2% 0px 2%;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -43,17 +45,18 @@
     padding: 0px;
 }
 
-.nav-link-separator {
+/* .nav-link-separator {
     width: 1px;
-    height: 65%;
+    height: 1px;
     margin: 0px 0px 1px 0px;
     padding: 0px;
     background: white;
-}
+} */
 
 .nav-link {
-    color: white;
+    color: #ccc;
     padding: 9px;
+    border: 0;
     font-size: 26px;
     
     display: flex;
@@ -63,30 +66,43 @@
 .nav-link:hover {
     text-decoration: none;
     opacity: 0.9;
-    background: cornflowerblue;
     color: white;
 }
-.nav-link:visited, .nav-link:focus, .nav-link:active {
+.nav-link:visited {
+    color: #ccc;
+    text-decoration: none;
+}
+.nav-link:focus, .nav-link:active {
     color: white;
     text-decoration: none;
 }
 
 .nav-link-active {
-    background: black;
+    color: white;
+    border-bottom: 1px solid white;
 }
 
+.nav-sectiontext {
+    white-space: nowrap;
+}
 
-.nav-link-hightext {
-    font-size: 50%;
+@media (max-width: 1300px) {
+    .nav-link {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .nav-sectiontext {
+        font-size: 20px;
+    }
 }
 
 
 .nav-link-asatruth-separator {
-    width: 1px;
-    height: 65%;
+    width: 25px;
     margin: 0px 0px 1px 5px;
     padding: 0px;
-    background: white;
+    background: black;
 }
 
 .nav-link-asatruth {

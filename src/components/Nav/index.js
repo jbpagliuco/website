@@ -19,19 +19,19 @@ export default class Nav extends React.Component {
                     <ul className="nav-links">
                         <h2 className="nav-link-container">
                             <NavLink exact className="nav-link" to="/" activeClassName="nav-link-active" onClick={scrollToTop}>
-                                <h2 className="nospace">Home</h2>
+                                <h2 className="nospace nav-sectiontext">Home</h2>
                             </NavLink>
                         </h2>
                         <div className="nav-link-separator"/>
                         <h2 className="nav-link-container">
                             <NavLink className="nav-link" to="/developer" activeClassName="nav-link-active"onClick={scrollToTop}>
-                                <h2 className="nospace">Developer</h2>
+                                <h2 className="nospace nav-sectiontext">Software Engineer</h2>
                             </NavLink>
                         </h2>
                         <div className="nav-link-separator"/>
                         <h2 className="nav-link-container">
                             <NavLink className="nav-link" to="/musician" activeClassName="nav-link-active"onClick={scrollToTop}>
-                                <h2 className="nospace">Musician</h2>
+                                <h2 className="nospace nav-sectiontext">Musician</h2>
                             </NavLink>
                         </h2>
                         <div className="nav-link-separator"/>
