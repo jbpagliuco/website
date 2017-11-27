@@ -5,6 +5,7 @@
 
 .asa-container {
     background-position: right 70%;
+    image-rendering: crisp-edges; /* usually not supported */
 }
 
 .asa-content-container {
@@ -27,6 +28,19 @@
     margin: 15px 0px 25px 0px;
 }
 
+.asa-desc {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+}
+.asa-desc-strong {
+    color: red;
+}
+
+.asa-intro {
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+}
 
 @media (max-width: 1920px) {
     .asa-logo-img {
