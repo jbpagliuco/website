@@ -36,7 +36,7 @@ export default class HomeBio extends React.Component {
 
                     <BioSection>
                         <p>
-                            I am in my final year of studying Computer Science at the University of Illinois at Urbana-Champaign. As I wrap my collegiate adventure, I aspire to be a professional game developer. On my way there, I am creating my 2d Norse mythology inspired game, Asatruth.
+                            I am in my final year of studying Computer Science at the University of Illinois at Urbana-Champaign. As I wrap up my collegiate adventure, I aspire to be a professional game developer. On my way there, I am creating my 2d Norse mythology inspired game, Asatruth.
                         </p>
                     </BioSection>
 

@@ -77,10 +77,11 @@ a.anchor {
     margin: 10px;
     text-align: center;
     text-decoration: none;
+    transition: all .2s ease-in-out;
 }
 
 .sm-icon:hover {
-    opacity: 0.7;
+    transform: scale(1.2);
 }
 
 
