@@ -13,6 +13,11 @@ html, body, #app, #app > div {
     padding-top: 105px;
 }
 
+@font-face {
+    font-family: "Norsebold";
+    src: url("/public/fonts/Norsebold.otf");
+}
+
 /* Offset for the fixed nav bar */
 a.anchor {
     display: block;

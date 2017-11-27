@@ -30,16 +30,16 @@ export default class Nav extends React.Component {
                         </h2>
                         <div className="nav-link-separator"/>
                         <h2 className="nav-link-container">
-                            <NavLink className="nav-link" to="/musician" activeClassName="nav-link-active"onClick={scrollToTop}>
+                            <NavLink className="nav-link" to="/musician" activeClassName="nav-link-active" onClick={scrollToTop}>
                                 <h2 className="nospace nav-sectiontext">Musician</h2>
                             </NavLink>
                         </h2>
                         <div className="nav-link-separator"/>
 
-                        <div className="nav-link-asatruth-separator" />
                         <h2 className="nav-link-container">
-                            <NavLink className="nav-link nav-link-asatruth" to="/Asatruth" activeClassName="nav-link-active">
-                                <img src="/public/images/logo/AsatruthLogo.png" height={51}/>
+                            <NavLink className="nav-link" to="/Asatruth" activeClassName="nav-link-active">
+                                {/* <img src="/public/images/logo/AsatruthLogo.png" height={51}/> */}
+                                <h2 className="nospace nav-sectiontext nav-link-asatruth">Asatruth</h2>
                             </NavLink>
                         </h2>
                     </ul>

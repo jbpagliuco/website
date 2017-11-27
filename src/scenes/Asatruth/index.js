@@ -16,10 +16,14 @@ export default class Asatruth extends React.Component {
     }
 
     render() {
+        let bkgImgSrc = "/public/images/bkg/asatruth/asatruthbkg.png";
+        // if (window.innerWidth > 2000)
+        //     bkgImgSrc = "/public/images/bkg/asatruth/asatruthbkg_BIG.png";
+
         return (
-            <PageContainer className="asa-container" backgroundImage="/public/images/bkg/asatruth.jpg" tint={0.2}>
+            <PageContainer className="asa-container" backgroundImage={bkgImgSrc} tint={0.2}>
                 <div className="asa-content-container">
-                    <h1>Asatruth</h1>
+                    <img className="asa-logo-img" src="/public/images/logo/AsatruthLogo2.png" />
                     <p>
                         Around the 12th century, the Norse gods were all been locked up in a Christian dominated Sweden. After hundreds of years, they've been abandoned and forgotten about. Now, the world must rebuild itself after a recent global nuclear war that has brought mutations, destruction, and death. In Sweden, a group of people have gained superhuman abilities from the radiation caused by the war. Claiming to be the Second Coming of Jesus, they have taken Sweden into their own hands. After being forced to follow and obey The Prophet, a small resistance has emerged with a goal to return Sweden to its former glory under the Asatru religion.
                     </p>

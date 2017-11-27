@@ -82,6 +82,11 @@
     border-bottom: 1px solid white;
 }
 
+.nav-link-active > * {
+    font-weight: bold;
+    color: white;
+}
+
 .nav-sectiontext {
     white-space: nowrap;
 }
@@ -98,15 +103,6 @@
 }
 
 
-.nav-link-asatruth-separator {
-    width: 25px;
-    margin: 0px 0px 1px 5px;
-    padding: 0px;
-    background: black;
-}
-
 .nav-link-asatruth {
-    color: cornflowerblue;
-    position: relative;
-    top: 7px;
+    font-family: "Norsebold";
 }
