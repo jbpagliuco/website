@@ -4,13 +4,23 @@
 
 
 
-html, body, #app, #app > div {
+html, body, #app {
     min-width: 100%;
     min-height: 100%;
+
+    overflow-x: hidden;
+}
+#app > div {
+    min-width: 100%;
 }
 
 #app {
     padding-top: 105px;
+}
+@media (max-width: 800px) {
+    #app {
+        padding-top: 60px;
+    }
 }
 
 @font-face {
@@ -30,7 +40,13 @@ a.anchor {
 .page-container {
     display: flex;
     flex-flow: column;
-    min-height: 100vh;
+    min-height: calc(100vh - 105px);
+}
+
+@media (max-width: 800px) {
+    .page-container {
+        min-height: calc(100vh - 60px);
+    }
 }
 
 .nospace {

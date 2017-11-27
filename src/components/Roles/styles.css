@@ -70,3 +70,16 @@
         text-align: center;
     }
 }
+
+
+
+/* Mobile (Portrait) */
+@media (max-width: 800px) and (max-height: 600px) {
+    .role-text {
+        padding: 10px;
+    }
+    
+    .role-text-main > p {
+        text-align: left;
+    }
+}

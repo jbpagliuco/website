@@ -4,3 +4,11 @@
     
     background-size: cover;
 }
+
+
+/* Mobile */
+@media (max-width: 800px) {
+    .pagecontainer {
+        min-height: calc(100vh - 60px);
+    }
+}

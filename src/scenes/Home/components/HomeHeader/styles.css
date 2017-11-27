@@ -41,12 +41,6 @@
     background-position-y: 25%;
 }
 
-.home-header-video > video {
-    position: relative;
-    width: 100%;
-    top: -100px;
-}
-
 .home-header-text-container {
     position: relative;
     margin: 0px;
@@ -79,4 +73,25 @@
     color: #FFA0A0;
     text-decoration: none;
     cursor: pointer;
+}
+
+
+/* Mobile (Portrait) */
+@media (max-width: 800px) and (max-height: 600px) {
+    .home-header-container {
+        justify-content: flex-start;
+    }
+
+    .home-header-text-container {
+        max-width: 100%;
+    }
+
+    .home-header-name {
+        font-size: 40px;
+    }
+
+    .home-header-subtitle-container {
+        text-align: left;
+        font-size: 25px;
+    }
 }

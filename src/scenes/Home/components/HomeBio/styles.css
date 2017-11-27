@@ -42,3 +42,27 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+
+/* Mobile (Portrait) */
+@media (max-width: 800px) and (max-height: 600px) {
+    .home-bio-container {
+        padding: 10px 0px;
+    }
+    
+    .home-bio-title {
+        margin-bottom: 10px;
+    }
+
+    .home-bio-text-container {
+        width: 100%;
+    }
+
+    .home-bio-section {
+        text-align: left;
+        margin: 0px 10px;
+    }
+}

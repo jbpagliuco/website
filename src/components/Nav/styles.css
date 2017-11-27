@@ -1,5 +1,6 @@
 .nav {
     display: flex;
+    justify-content: space-between;
     width: 100%;
 
     position: fixed;
@@ -44,14 +45,6 @@
     margin: 0px 25px;
     padding: 0px;
 }
-
-/* .nav-link-separator {
-    width: 1px;
-    height: 1px;
-    margin: 0px 0px 1px 0px;
-    padding: 0px;
-    background: white;
-} */
 
 .nav-link {
     color: #ccc;
@@ -105,4 +98,23 @@
 
 .nav-link-asatruth {
     font-family: "Norsebold";
+}
+
+
+.nav-mini-button {
+    float: right;
+    cursor: pointer;
+}
+
+
+
+/* Mobile */
+@media (max-width: 800px) {
+    .nav {
+        padding: 10px 5% 10px 5%;
+    }
+
+    .nav-logo {
+        padding: 0px;
+    }
 }
